@@ -49,6 +49,7 @@
             // 
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
+            dataGridView1.BorderStyle = BorderStyle.Fixed3D;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Location = new Point(230, 12);
             dataGridView1.Name = "dataGridView1";
@@ -58,8 +59,9 @@
             // 
             // button1
             // 
-            button1.BackColor = Color.LimeGreen;
+            button1.BackColor = Color.FromArgb(0, 64, 64);
             button1.DialogResult = DialogResult.OK;
+            button1.ForeColor = SystemColors.ButtonHighlight;
             button1.Location = new Point(12, 394);
             button1.Name = "button1";
             button1.Size = new Size(108, 35);
@@ -70,18 +72,19 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.Lime;
+            button3.BackColor = Color.FromArgb(0, 64, 64);
+            button3.ForeColor = SystemColors.ButtonHighlight;
             button3.Location = new Point(96, 131);
             button3.Name = "button3";
             button3.Size = new Size(101, 72);
             button3.TabIndex = 3;
-            button3.Text = "MOSTRAR TOTAL DE COMPRAS DE LOS CLIENTES";
+            button3.Text = " TOTAL DE COMPRAS DE LOS CLIENTES";
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(0, 64, 64);
+            panel1.BackColor = Color.DarkGreen;
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(button4);
             panel1.Controls.Add(pictureBox2);
@@ -107,8 +110,9 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.LimeGreen;
-            button4.Location = new Point(104, 241);
+            button4.BackColor = Color.FromArgb(0, 64, 64);
+            button4.ForeColor = SystemColors.ButtonHighlight;
+            button4.Location = new Point(112, 240);
             button4.Name = "button4";
             button4.Size = new Size(75, 23);
             button4.TabIndex = 7;
@@ -138,12 +142,13 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.LimeGreen;
+            button2.BackColor = Color.FromArgb(0, 64, 64);
+            button2.ForeColor = SystemColors.ButtonHighlight;
             button2.Location = new Point(99, 46);
             button2.Name = "button2";
             button2.Size = new Size(98, 48);
             button2.TabIndex = 4;
-            button2.Text = "MOSTRAR CLIENTES";
+            button2.Text = " CLIENTES";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
@@ -151,7 +156,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkGreen;
+            BackColor = Color.Gray;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(dataGridView1);

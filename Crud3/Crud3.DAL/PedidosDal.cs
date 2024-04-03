@@ -18,7 +18,9 @@ namespace Crud3.DAL
         }
         public DataTable ListarPedidosDal()
         {
-            string consulta = "select * from pedido";
+            string consulta = "SELECT Pedido.*, Cliente.Nombre AS NombreCliente " +
+                              "FROM Pedido " +
+                              "INNER JOIN Cliente ON Pedido.IDCliente = Cliente.IDCliente";
             DataTable Lista = conexion.EjecutarDataTabla(consulta, "tabla");
             return Lista;
         }

@@ -58,21 +58,23 @@
             // 
             // button2
             // 
-            button2.BackColor = Color.LimeGreen;
+            button2.BackColor = Color.FromArgb(0, 64, 64);
             button2.DialogResult = DialogResult.Cancel;
-            button2.Location = new Point(67, 249);
+            button2.ForeColor = SystemColors.ButtonHighlight;
+            button2.Location = new Point(67, 381);
             button2.Name = "button2";
-            button2.Size = new Size(75, 23);
+            button2.Size = new Size(101, 42);
             button2.TabIndex = 2;
             button2.Text = "CANCELAR";
             button2.UseVisualStyleBackColor = false;
             // 
             // button1
             // 
-            button1.BackColor = Color.LimeGreen;
-            button1.Location = new Point(67, 178);
+            button1.BackColor = Color.FromArgb(0, 64, 64);
+            button1.ForeColor = SystemColors.ButtonHighlight;
+            button1.Location = new Point(67, 219);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(101, 37);
             button1.TabIndex = 3;
             button1.Text = "ELIMINAR";
             button1.UseVisualStyleBackColor = false;
@@ -80,11 +82,12 @@
             // 
             // button3
             // 
-            button3.BackColor = Color.LimeGreen;
+            button3.BackColor = Color.FromArgb(0, 64, 64);
             button3.DialogResult = DialogResult.OK;
-            button3.Location = new Point(67, 121);
+            button3.ForeColor = SystemColors.ButtonHighlight;
+            button3.Location = new Point(67, 137);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(101, 32);
             button3.TabIndex = 4;
             button3.Text = "EDITAR";
             button3.UseVisualStyleBackColor = false;
@@ -92,10 +95,11 @@
             // 
             // button4
             // 
-            button4.BackColor = Color.LimeGreen;
-            button4.Location = new Point(67, 64);
+            button4.BackColor = Color.FromArgb(0, 64, 64);
+            button4.ForeColor = SystemColors.ButtonHighlight;
+            button4.Location = new Point(67, 52);
             button4.Name = "button4";
-            button4.Size = new Size(75, 23);
+            button4.Size = new Size(101, 36);
             button4.TabIndex = 5;
             button4.Text = "AGREGAR";
             button4.UseVisualStyleBackColor = false;
@@ -103,7 +107,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(0, 64, 64);
+            panel1.BackColor = Color.DarkGreen;
             panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(pictureBox1);
@@ -120,7 +124,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(-9, 178);
+            pictureBox3.Location = new Point(-9, 219);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(64, 36);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -130,7 +134,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(-9, 112);
+            pictureBox2.Location = new Point(-9, 128);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(70, 41);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -140,7 +144,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(6, 52);
+            pictureBox1.Location = new Point(6, 43);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(55, 45);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -151,7 +155,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.DarkGreen;
+            BackColor = Color.LightGray;
             ClientSize = new Size(800, 450);
             Controls.Add(panel1);
             Controls.Add(dataGridView1);
